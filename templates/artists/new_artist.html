@@ -1,0 +1,30 @@
+<!-- GET /albums -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New Artist</title>
+  </head>
+  <body>
+    <h1> New Artist</h1>
+    <form action="/artists" method="POST">
+      {% if errors %}
+        <p class="t-errors">
+          There were errors with your submission: {{ errors }}
+        </p>
+      {% endif %}
+
+      <p>
+        <label for="Name">Name</label>
+        <input type="text" name="Name" id="Name" required>
+      </p>
+      <p>
+        <label for="Genre">Genre</label>
+        <input type="text" name="Genre" id="Genre" required>
+      </p>
+      <p>
+        <input type="submit" value="Create artist">
+      </p>
+    </form>
+  </body>
+</html>

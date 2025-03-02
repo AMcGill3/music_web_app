@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Artists</title>
+  </head>
+  <body>
+    <h1>Artists</h1>
+
+    {% for artist in artists %}
+      <div>
+        <p>
+          <a href="/artists/{{artist.id}}">Name: {{artist.name}}</a><br>
+          Genre: {{artist.genre}}
+        </p>
+      </div>
+    {% endfor %}
+    <a href="/artists/new">Add a new artist</a><br>
+    <a href="/">Return to home</a>
+  </body>
+</html>

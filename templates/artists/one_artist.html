@@ -1,0 +1,19 @@
+<!-- GET /albums -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Artist</title>
+  </head>
+  <body>
+    <h1>Artist</h1>
+      <div>
+        <p>
+        <span class='t-name'>Name: {{artist.name}}</span><br>
+        <span class='t-genre'>Genre: {{artist.genre}}</span>
+        </p>
+      </div>
+
+      <a href="/artists/{{artist_id}}/albums">View albums</a><br><a href="/artists">Return to artists</a>
+  </body>
+</html>
